@@ -1,0 +1,16 @@
+<div class="content">
+    <div class="header">
+        <a routerLink="/"><img src="../assets/images/Back.svg" class="navigation-icon" /></a>
+        <h2 class="heading-2">{{title}}</h2>
+    </div>
+    <app-searchbox (onSearchChange)="onSearchChange($event)" />
+</div>
+<div class="backdrop" infinite-scroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="1000"
+  [scrollWindow]="false"
+  (scrolled)="loadBooks()">
+    <div class="content books-container">
+        <app-book-card *ngFor="let book of books" [title]="book.title" [coverImage]="book.cover_image" [author]="book.author" [link]="book.link" />
+    </div>
+</div>

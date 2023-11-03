@@ -1,0 +1,5 @@
+<div class="search-box-container" [formGroup]="formGroup">
+    <img src="../assets/images/Search.svg" class="search-icon" />
+    <img src="../assets/images/Cancel.svg" class="clear-icon" (click)="handleClearSearch()" />
+    <input type="text" placeholder="Search" formControlName="searchControl" />
+</div>

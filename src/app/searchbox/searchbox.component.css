@@ -1,0 +1,40 @@
+.search-box-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  cursor: pointer;
+}
+
+input {
+  background-color: #f0f0f6;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid transparent;
+  height: 40px;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 16px;
+  color: #333333;
+  font-family: "Montserrat-SemiBold";
+  width: 100%;
+}
+
+input::-webkit-input-placeholder,
+input::placeholder,
+input::-moz-placeholder {
+  color: #a0a0a0;
+}
+
+input:focus {
+  border-color: #5e56e7;
+}

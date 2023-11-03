@@ -1,0 +1,5 @@
+<div class="genre-card-container">
+    <img [src]="iconPath" class="icon" />
+    <div class="title">{{title}}</div>
+    <a [routerLink]="navigationPath" [queryParams]="{topic: [key]}"><img src="../assets/images/Next.svg" /></a>
+</div>

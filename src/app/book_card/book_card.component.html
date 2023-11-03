@@ -1,0 +1,12 @@
+<a [href]="link" *ngIf="link !== ''" target="_blank">
+    <div class="book-card">
+        <img [src]="coverImage" class="image" />
+        <h2 class="title">{{title}}</h2>
+        <h6 class="author">{{author}}</h6>
+    </div>
+</a>
+<div class="book-card" *ngIf="link === ''" (click)="handleCardClick()">
+    <img [src]="coverImage" class="image" />
+    <h2 class="title">{{title}}</h2>
+    <h6 class="author">{{author}}</h6>
+</div>

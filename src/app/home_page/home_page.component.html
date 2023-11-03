@@ -1,0 +1,11 @@
+<div class="home-page-container">
+    <div class="banner">
+        <div class="content">
+            <h1 class="heading-1">Gutenberg Project</h1>
+            <div class="body-1">A social cataloging website that allows you to freely search its database of books, annotations, and reviews.</div>
+            <div class="category-container">
+                <app-genre-card *ngFor="let category of categories" [title]="category.title" [iconPath]="category.iconPath" navigationPath="/books" [key]="category.key" />
+            </div>
+        </div>
+    </div>
+</div>
